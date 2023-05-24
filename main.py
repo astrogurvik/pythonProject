@@ -1,15 +1,13 @@
-day = int(input('Введите номер дня недели:\n'))
-if day == 1:
-    print('Это понедельник')
-if day == 2:
-    print('Это вторник')
-if day == 3:
-    print('Это среда')
-if day == 4:
-    print('Это четверг')
-if day == 5:
-    print('Это пятница')
-if day == 6:
-    print('Это суббота')
-if day == 7:
-    print('Это воскресенье')
+secNumber = int(input('Enter number of second:\n'))
+secDay = 24 * 60 * 60
+choice = input('Enter, what do you want to count to midnight: sec, min or hours:\n')
+hours = (secDay - secNumber) // 60 // 60
+minutes = (secDay - secNumber) // 60
+seconds = (secDay - secNumber)
+if choice == 'sec':
+    print(seconds)
+if choice == 'min':
+    print(minutes)
+if choice == 'hours':
+    print(hours)
+
