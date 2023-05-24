@@ -6,8 +6,8 @@ minutes = (secDay - secNumber) // 60
 seconds = (secDay - secNumber)
 if choice == 'sec':
     print(seconds)
-if choice == 'min':
-    print(minutes)
-if choice == 'hours':
+elif choice == 'min':
+        print(minutes)
+else:
     print(hours)
 
